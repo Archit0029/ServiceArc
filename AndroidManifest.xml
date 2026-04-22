@@ -27,7 +27,7 @@
         <!-- Google Maps API Key - Updated to match google-services.json -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBDKEYWQtr2DqKmz5E1OWf_uNBQqe9ZmCE" />
+            android:value="google map API key writen here" />
         <activity android:name=".ExploreActivity"/>
         <activity android:name=".BookingActivity"/>
         <activity android:name=".ChatActivity"/>
