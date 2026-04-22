@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:backgroundTint="#2A2D5A"
+    android:radius="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Provider/Customer Name -->
+        <TextView
+            android:id="@+id/txtProvider"
+            android:text="Raj Electrician"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Distance -->
+        <TextView
+            android:id="@+id/txtDistance"
+            android:text="1.2 km away"
+            android:textColor="#BBBBBB"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/txtAddress"
+            android:text="Phase 5 Mohali"
+            android:textColor="#BBBBBB"
+            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Phone -->
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#BBBBBB"
+            android:text="Mobile: 1234567890" />
+
+        <!-- Completion Date (Used for History) -->
+        <TextView
+            android:id="@+id/txtCompletionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#BBBBBB"
+            android:visibility="gone"
+            android:text="Completed on: 12/12/2023" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/txtStatus"
+            android:text="Pending"
+            android:textStyle="bold"
+            android:textColor="#FFC107"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Countdown -->
+        <TextView
+            android:id="@+id/txtTimer"
+            android:text="Arriving in 10:00"
+            android:textColor="#4CAF50"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:id="@+id/layoutButtons"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnTrack"
+                android:text="Navigate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_navigate"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnManage"
+                android:text="Arrived"
+                android:layout_marginStart="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_arrived"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnComplete"
+                android:text="Complete"
+                android:layout_marginStart="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_complete"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
