@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.servicearc">
+
+    <queries>
+        <package android:name="com.google.android.gms" />
+        <intent>
+            <action android:name="com.google.android.gms.auth.api.signin.SERVICE" />
+        </intent>
+        <intent>
+            <action android:name="com.google.android.geo.API_KEY" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar"
+        android:label="ServiceArc"
+        android:icon="@drawable/applogo"
+        android:supportsRtl="true"
+        tools:ignore="Instantiatable">
+
+        <!-- Google Maps API Key - Updated to match google-services.json -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBDKEYWQtr2DqKmz5E1OWf_uNBQqe9ZmCE" />
+        <activity android:name=".ExploreActivity"/>
+        <activity android:name=".BookingActivity"/>
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".CustomerDashboardActivity"
+            android:exported="false" />
+        <activity android:name=".ServiceNavigationActivity"/>
+        <activity
+            android:name=".ProviderMapActivity"
+            android:exported="false" />
+        <activity android:name=".ProviderDashboardActivity"
+            android:exported="false" />
+        <activity android:name=".ProviderBookingsActivity"
+            android:exported="false" />
+        <activity android:name=".ProviderChatActivity"
+            android:exported="false" />
+        <activity android:name=".ProviderProfileActivity"
+            android:exported="false" />
+        <activity android:name=".PhoneEntryActivity"
+            android:exported="false" />
+        <activity android:name=".RoleSelectionActivity"
+            android:exported="false" />
+        <activity android:name=".CustomerDetailsActivity"
+            android:exported="false" />
+        <activity android:name=".ProviderDetailsActivity"
+            android:exported="false" />
+        <activity android:name=".HomeFragment"
+            android:exported="false" />
+        <activity android:name=".ProfileFragment"
+            android:exported="false"/>
+        <activity android:name=".BookingFragment"
+            android:exported="false"/>
+
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.gms.client_id"
+            android:value="@string/default_web_client_id"/>
+    </application>
+</manifest>
