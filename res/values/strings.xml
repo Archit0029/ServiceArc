@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ServiceArc</string>
+    <!-- Replace the value below with your Web Client ID from Firebase Console -->
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE.apps.googleusercontent.com</string>
+    <!-- Replace the value below with your Google Maps API key -->
+    <string name="google_maps_key">YOUR_API_KEY_HERE</string>
+</resources>
